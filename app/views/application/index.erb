@@ -1,0 +1,37 @@
+<h1></h1>
+
+<form action="/new_users" method="POST">
+    <h2>Create User</h2>
+    <label>User Name</label>
+    <input type="text" name="user[name]" id="user_name">
+    <label>Password</label>
+    <input type="text" name="user[password]" id="user_password">
+
+    <input type="submit" value="Create User">
+</form>
+
+<form action="/users" method="POST">
+    <h2>Log In</h2>
+    <label>User Name</label>
+    <input type="text" name="user[name]" id="user_name">
+    <label>Password</label>
+    <input type="text" name="user[password]" id="user_password">
+    <input type="submit" value="Log In"> 
+</form>
+
+<form action="/users/pictures" method="POST">
+    <h2>Pictures</h2>
+    <label>Name</label>
+    <input type="text" name="picture[name]" id="picture_name">
+    <label>User Id</label>
+    <select name="picture[user_id]">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+    <label>URL</label>
+    <input type="text" name="picture[url]" id="picture_url">
+    <input type="submit" value="Upload Pictures">
+</form>
+
+
